@@ -15,6 +15,11 @@ export default function Header() {
                 <Typography variant = "h3" component = "h4" className = {headerClass.headerDescription}>
                     Fullstack developer placeholder placeholder
                 </Typography>
+                <Box className = {headerClass.eyeCandy}>
+                    <Typography variant = "span" className = {headerClass.eyeCandyText}>
+                        About me
+                    </Typography>
+                </Box>
             </Box>
         </Box>
     )

@@ -14,6 +14,7 @@ export const usageStyle = makeStyles(() => ({
     },
     headerContainer: {
         color: Theme.themeColor.back,
+        fontFamily: "roboto",
         width: "100%",
         minHeight: "90vh",
         height: "auto",
@@ -28,6 +29,9 @@ export const usageStyle = makeStyles(() => ({
     },
     headerDescription: {
         fontSize: "2rem"
+    },
+    eyeCandy: {
+        display: "flex"
     },
     navBar: {
         backgroundColor: Theme.themeColor.base,
