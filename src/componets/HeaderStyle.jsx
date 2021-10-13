@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core"
 import { Theme } from "./Theme"
 import Image from '../assets/banner.jpg'
 
-export const usageStyle = makeStyles(() => ({
+export const usageStyle = makeStyles((theme) => ({
     headerWrap:{
         background: `linear-gradient(to bottom right,#04303140, #00606473),url(${Image})`,
         backgroundSize: "cover",
@@ -15,7 +15,7 @@ export const usageStyle = makeStyles(() => ({
     headerContainer: {
         color: Theme.themeColor.back,
         fontFamily: "roboto",
-        width: "100%",
+        width: "85%",
         minHeight: "90vh",
         height: "auto",
         display: "flex",
@@ -25,13 +25,58 @@ export const usageStyle = makeStyles(() => ({
         justifyContent: "center"
     },
     headerTitle: {
-        fontSize: "3rem"
+        fontSize: "3rem",
+        margin: theme.spacing(1, 0),
+        [theme.breakpoints.down("xs")]: {
+        fontSize: "2rem",
+        },
     },
     headerDescription: {
-        fontSize: "2rem"
+        fontSize: "2rem",
+        margin: theme.spacing(1, 0),
+        [theme.breakpoints.down("xs")]: {
+        fontSize: "1.5rem",
+        margin: theme.spacing(2, 0),
+        },
     },
     eyeCandy: {
-        display: "flex"
+        position: "relative",
+        marginTop: "20px",
+        display: "flex",
+        fontWeight: "bolder",
+        fontFamily: "roboto",
+        '&:before': {
+            width: "40px",
+            height: "40px",
+            backgroundColor: Theme.themeColor.primary,
+            content: '""',
+            borderRadius: "50%"
+        }
+    },
+    eyeCandyText: {
+        position: "absolute",
+        lineHeight: "40px",
+        left: "20px"
+    },
+    arrow: {
+        animationName: "upDown",
+        animationDuration: "0.7s",
+        animationIterationCount: "infinite",
+        position: "absolute",
+        lineHeight: "50px",
+        left: "95px"
+    },
+    '@global': {
+        "@keyframes upDown": {
+            "0%": {
+              transform: "scale(1,1)",
+              paddingTop: "0px",
+            },
+            "100%": {
+              transform: "scale(1,2)",
+              paddingTop: "10px",
+            },
+        }, 
     },
     navBar: {
         backgroundColor: Theme.themeColor.base,

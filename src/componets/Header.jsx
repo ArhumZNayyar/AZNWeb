@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Typography } from '@material-ui/core'
 import { usageStyle } from './HeaderStyle'
 import Navbar from '../Navbar'
+import { ArrowDownward } from '@material-ui/icons';
 
 export default function Header() {
     const headerClass = usageStyle() 
@@ -18,6 +19,9 @@ export default function Header() {
                 <Box className = {headerClass.eyeCandy}>
                     <Typography variant = "span" className = {headerClass.eyeCandyText}>
                         About me
+                    </Typography>
+                    <Typography variant = "span" className = {headerClass.arrow}>
+                        <ArrowDownward></ArrowDownward>
                     </Typography>
                 </Box>
             </Box>
