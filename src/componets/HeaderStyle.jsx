@@ -12,16 +12,24 @@ export const usageStyle = makeStyles(() => ({
         height: "auto"
     //  backgroundColor: Theme.themeColor.base,
     },
-    Navbar: {
+    headerContainer: {
+        width: "100%",
+        minHeight: "90vh",
+        height: "auto",
+        display: "flex",
+        flexFlow: "column wrap",
+        alignItems: "center"
+    },
+    navBar: {
         backgroundColor: Theme.themeColor.base,
         color: Theme.themeColor.back
     },
-    ToolBar: {
+    navLink: {
+        color: Theme.themeColor.back
+    },
+    toolBar: {
         display: "flex",
         flexFlow: "row wrap",
         justifyContent: "space-between"
-    },
-    navLink: {
-        color: Theme.themeColor.back
     }
 }))

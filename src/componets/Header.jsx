@@ -9,7 +9,12 @@ export default function Header() {
         <Box className = {headerClass.headerWrap}>
             <Navbar/>
             <Box className={headerClass.headerWrap}>
-                <Typography variant = "h2">Hello World!</Typography>
+                <Typography variant = "h3" component = "h4" className = {headerClass.headerTitle}>
+                    Hello World!
+                </Typography>
+                <Typography variant = "h3" component = "h4" className = {headerClass.headerDescription}>
+                    Fullstack developer placeholder placeholder
+                </Typography>
             </Box>
         </Box>
     )
