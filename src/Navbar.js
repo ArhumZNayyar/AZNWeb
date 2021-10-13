@@ -8,6 +8,8 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { usageStyle } from './componets/HeaderStyle';
 import { Hidden } from '@material-ui/core';
+import MenuOpenItem from '@material-ui/icons/MenuOpen';
+import { MenuOpenRounded } from '@material-ui/icons';
 
 export default function Navbar() {
     const navClass = usageStyle()
@@ -37,6 +39,11 @@ export default function Navbar() {
                             <Box>
                                 {navLink.map((item, index) => <Button className = {navClass.navLink}>{item.label}</Button>)}
                             </Box>
+                    </Box>
+                    <Box component = {Hidden} smUp>
+                            <IconButton color = "inherit" onClick={() => console.log("Menu was clicked.")}>
+                                    <MenuOpenRounded></MenuOpenRounded>
+                            </IconButton>
                     </Box>
                 </Toolbar>
             </AppBar>
