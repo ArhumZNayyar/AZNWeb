@@ -19,7 +19,7 @@ export default function Navbar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" className = {navClass.Navbar}>
-                <Toolbar className = {navClass.Navbar}>
+                <Toolbar className = {navClass.ToolBar}>
                     <IconButton
                         size="large"
                         edge="start"
