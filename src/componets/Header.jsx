@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Typography } from '@material-ui/core'
 import { usageStyle } from './HeaderStyle'
-import Navbar from './Navbar'
+import Navbar from '../Navbar'
 
 export default function Header() {
     const headerClass = usageStyle() 

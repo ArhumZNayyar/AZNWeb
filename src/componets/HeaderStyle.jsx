@@ -11,5 +11,17 @@ export const usageStyle = makeStyles(() => ({
         minHeight: "90vh",
         height: "auto"
     //  backgroundColor: Theme.themeColor.base,
+    },
+    Navbar: {
+        backgroundColor: Theme.themeColor.base,
+        color: Theme.themeColor.back
+    },
+    ToolBar: {
+        display: "flex",
+        flexFlow: "row wrap",
+        justifyContent: "space-between"
+    },
+    navLink: {
+        color: Theme.themeColor.back
     }
 }))
