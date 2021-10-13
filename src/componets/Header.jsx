@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <Box className = {headerClass.headerWrap}>
             <Navbar/>
-            <Box className={headerClass.headerWrap}>
+            <Box className={headerClass.headerContainer}>
                 <Typography variant = "h3" component = "h4" className = {headerClass.headerTitle}>
                     Hello World!
                 </Typography>

@@ -13,12 +13,21 @@ export const usageStyle = makeStyles(() => ({
     //  backgroundColor: Theme.themeColor.base,
     },
     headerContainer: {
+        color: Theme.themeColor.back,
         width: "100%",
         minHeight: "90vh",
         height: "auto",
         display: "flex",
+        padding: "20px",
         flexFlow: "column wrap",
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    headerTitle: {
+        fontSize: "3rem"
+    },
+    headerDescription: {
+        fontSize: "2rem"
     },
     navBar: {
         backgroundColor: Theme.themeColor.base,
