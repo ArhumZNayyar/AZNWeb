@@ -33,8 +33,10 @@ export default function Navbar() {
                         Arhum Z. Nayyar's Portfolio
                     </Typography>
                     {/*<Button color="inherit">Login</Button> */}
-                    <Box component = {Hidden}>
-                    {navLink.map((item, index) => <Button className = {navClass.navLink}>{item.label}</Button>)}
+                    <Box component = {Hidden} xsDown>
+                            <Box>
+                                {navLink.map((item, index) => <Button className = {navClass.navLink}>{item.label}</Button>)}
+                            </Box>
                     </Box>
                 </Toolbar>
             </AppBar>
