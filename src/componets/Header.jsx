@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Typography } from '@material-ui/core'
 import { usageStyle } from './HeaderStyle'
 import Navbar from '../Navbar'
-import { ArrowDownward } from '@material-ui/icons';
+import { Eyecandy } from './GeneralComponents'
 
 export default function Header() {
     const headerClass = usageStyle() 
@@ -16,14 +16,7 @@ export default function Header() {
                 <Typography variant = "h3" component = "h4" className = {headerClass.headerDescription}>
                     Fullstack developer placeholder placeholder
                 </Typography>
-                <Box className = {headerClass.eyeCandy}>
-                    <Typography variant = "span" className = {headerClass.eyeCandyText}>
-                        About me
-                    </Typography>
-                    <Typography variant = "span" className = {headerClass.arrow}>
-                        <ArrowDownward></ArrowDownward>
-                    </Typography>
-                </Box>
+                {Eyecandy()}
             </Box>
         </Box>
     )
