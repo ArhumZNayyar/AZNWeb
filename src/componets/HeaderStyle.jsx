@@ -55,8 +55,8 @@ export const usageStyle = makeStyles((theme) => ({
     },
     eyeCandyText: {
         position: "absolute",
-        lineHeight: "40px",
-        left: "20px"
+        lineHeight: "25px",
+        left: "40px"
     },
     arrow: {
         animationName: "upDown",
